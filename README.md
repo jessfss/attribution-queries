@@ -1,6 +1,18 @@
 # 'Cool T-Shirts' touch attribution analysis
 CoolTShirts sells all kinds of cool T-shirts. They’ve launched marketing campaigns to boost visits and sales, and now want to map the customer journey using touch attribution. This project will guide you through analyzing user data to help optimize their campaigns.
 
+# 📘 Project Overview
+
+You're analyzing how users interact with the CoolTShirts website—from first visit to purchase—using touch attribution. The schema involves a `page_visits` table that includes:
+
+- `user_id`
+- `timestamp`
+- `page_name`
+- `utm_source`
+- `utm_campaign`
+
+You'll write several SQL queries to analyze campaign effectiveness. You can see the queries here: [attribution-queries](https://github.com/jessfss/attribution-queries/blob/main/queries.sql)
+
 # 📊 Campaign Investment Recommendation
 ### CoolTShirts – Attribution Analysis Summary
 
@@ -60,4 +72,6 @@ ORDER BY last_purchase_touch_count DESC;
 
 ```
 
-Acknowledgements: This is a project completed as part of 'Analysing data with SQL' course on Codecademy.
+#### Acknowledgements: This is a project completed as part of 'Analysing data with SQL' course on Codecademy.
+
+
