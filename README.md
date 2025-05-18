@@ -63,11 +63,10 @@ lt_attr AS (
     ON lt.user_id = pv.user_id
    AND lt.last_touch_at = pv.timestamp
 )
-SELECT utm_source,
-       utm_campaign,
+SELECT utm_campaign,
        COUNT(*) AS last_purchase_touch_count
 FROM lt_attr
-GROUP BY utm_source, utm_campaign
+GROUP BY utm_campaign
 ORDER BY last_purchase_touch_count DESC;
 
 ```
